@@ -47,7 +47,7 @@
     </div>
   </div>
 
-  <div id="tips" class="tips d-flex flex-column justify-content-between" style="display:none;">
+  <div id="tips" class="tips flex-column justify-content-between" style="display:none;">
     <img class="tips-mask align-self-end" src="assets/tips.png" alt="open in browser">
 
     <div class="d-flex align-items-center justify-content-center">
@@ -62,7 +62,9 @@
     (function(){
       var ua = navigator.userAgent.toLowerCase();
       if (/micromessager|alipayclient/.test(ua)) {
-        document.querySelector('#tips').style = '';
+        var el = document.querySelector('#tips');
+        el.style = '';
+        el.classList.add('d-flex');
       }
     })();
   </script>
