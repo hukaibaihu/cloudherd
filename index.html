@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, viewport-fix=cover">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <title>牧云台App下载</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container vh-100 text-center">
+    <p><br></p>
+    <p><br></p>
+    <div class="logo mx-auto mb-3">
+      <img src="assets/logo.png" alt="CloudHerd">
+    </div>
+    <p class="title">牧云台</p>
+    <p class="subtitle">v1.0.0</p>
+
+    <p><br></p>
+    <p><br></p>
+
+    <div class="btns px-3">
+      <p>
+        <a
+          class="btn btn-lg btn-primary btn-block rounded-pill d-flex align-items-center justify-content-center"
+          href="itms-services://?action=download-manifest&url=https%3A%2F%2Fhukaibaihu.github.io%2Fcloudherd%2Fmanifest.plist"
+        >
+          <img src="assets/icon-ios.svg" alt="iOS" width="24">
+          <span class="ml-3">iOS 下载</span>
+        </a>
+      </p>
+      <p>
+        <a
+          download
+          class="btn btn-lg btn-success btn-block rounded-pill d-flex align-items-center justify-content-center"
+          href="https://hukaibaihu.github.io/cloudherd/android/cloudherd_release_v1.0.0.apk"
+        >
+          <img src="assets/icon-android.svg" alt="Android" width="24">
+          <span class="ml-3">Android 下载</span>
+        </a>
+      </p>
+    </div>
+  </div>
+
+  <div id="tips" class="tips d-flex flex-column justify-content-between" style="display:none;">
+    <img class="tips-mask align-self-end" src="assets/tips.png" alt="open in browser">
+
+    <div class="d-flex align-items-center justify-content-center">
+      <div class="tips-logo">
+        <img class="d-block" src="assets/logo.png" alt="cloudherd" width="24">
+      </div>
+      <p class="tips-title ml-2">牧云台</p>
+    </div>
+  </div>
+
+  <script type="text/javascript">
+    (function(){
+      var ua = navigator.userAgent.toLowerCase();
+      if (/micromessager|alipayclient/.test(ua)) {
+        document.querySelector('#tips').style = '';
+      }
+    })();
+  </script>
+</body>
+</html>
